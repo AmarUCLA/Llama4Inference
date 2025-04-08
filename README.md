@@ -12,6 +12,10 @@ A comprehensive guide to setting up and running Llama 4 inference on high-perfor
 ## Installation Steps
 
 ### 1. Install Miniconda
+If you haven't already, update apt with:
+```bash
+apt update && apt upgrade -y
+```
 
 ```bash
 # Download Miniconda installer
