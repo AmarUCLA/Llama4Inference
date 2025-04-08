@@ -118,7 +118,7 @@ if prompt := st.chat_input("Type your message here..."):
                     message_history.append({"role": "assistant", "content": msg["content"]})
             
             stream = client.chat.completions.create(
-                model="./Llama-4-Maverick-17B-128E-Instruct-FP8",
+                model="meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8",
                 messages=[
                     *message_history,
                     {"role": "user", "content": api_content}
