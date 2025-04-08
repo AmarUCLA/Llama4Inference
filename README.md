@@ -71,19 +71,19 @@ huggingface-cli login
 
 ```bash
 # Step 1: Start the model server in a tmux session
-conda activate llamainference
 tmux new-session -s llama4-server
+conda activate llamainference
 bash serve.sh
 # Detach from tmux session with Ctrl+b then d
 
 # Step 2: Start the Streamlit interface in another tmux session
 tmux new-session -s llama4-ui
 conda activate llamainference  # Make sure to activate environment again
-streamlit run streamlit_chat.py --server.port 8080 --server.address 0.0.0.0
+streamlit run streamlit_chat.py --server.port 8000 --server.address 0.0.0.0
 # Detach from tmux session with Ctrl+b then d
 ```
 
-Access the web interface at: `http://[NODE_IP]:8080`
+Access the web interface at: `http://[NODE_IP]:8000`
 
 ### Option 2: Batch Inference
 
