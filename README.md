@@ -35,9 +35,9 @@ bash Miniconda3-latest-Linux-x86_64.sh
 mkdir llama4
 cd llama4
 
-# Clone the repository (replace with actual repository URL)
-git clone https://github.com/your-org/llama4-inference.git
-cd llama4-inference
+# Clone the repository
+git clone https://github.com/AmarUCLA/Llama4Inference.git
+cd Llama4Inference/
 ```
 
 ### 3. Set Up Python Environment
