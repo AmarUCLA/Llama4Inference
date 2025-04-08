@@ -71,6 +71,7 @@ huggingface-cli login
 
 ```bash
 # Step 1: Start the model server in a tmux session
+conda activate llamainference
 tmux new-session -s llama4-server
 bash serve.sh
 # Detach from tmux session with Ctrl+b then d
